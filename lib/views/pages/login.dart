@@ -105,25 +105,17 @@ class _LoginState extends State<Login> {
                               setState(() {
                                 isLoading = true;
                               });
-                              await AuthServices.SignIn(
+                              await AuthServices.signIn(
                                       ctrlEmail.text, ctrlPassword.text)
                                   .then((value) {
                                 if (value == "success") {
                                   setState(() {
                                     isLoading = false;
                                   });
-                                  ActivityServices.showToast(
-                                      "Login success", Colors.green);
                                   Navigator.pushReplacementNamed(
                                       context, MainMenu.routeName);
-                                  // final User user = auth.currentUser!;
-                                  // final docs = firestore.collection('users').doc(user.uid);
-                                  // if(docs.collection('role') == 'user'){
-                                  //   Navigator.pushReplacementNamed(context, MainMenu.routeName);
-                                  // }else if(docs.collection('role') == 'psikolog'){
-                                  //   Navigator.pushReplacementNamed(context, PsikologMainMenu.routeName);
-                                  // }
-
+                                  ActivityServices.showToast(
+                                      "Login success", Colors.green);
                                 } else {
                                   setState(() {
                                     isLoading = false;

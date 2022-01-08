@@ -8,10 +8,16 @@ class Users extends Equatable {
   final String password;
   final String createdAt;
   final String updatedAt;
-  final String role;
 
-  Users(this.uid, this.name, this.phone, this.email, this.password,
-      this.createdAt, this.updatedAt, this.role);
+  Users(
+    this.uid,
+    this.name,
+    this.phone,
+    this.email,
+    this.password,
+    this.createdAt,
+    this.updatedAt,
+  );
 
   @override
   List<Object> get props => [
@@ -22,6 +28,5 @@ class Users extends Equatable {
         password,
         createdAt,
         updatedAt,
-        role,
       ];
 }

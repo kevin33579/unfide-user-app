@@ -147,15 +147,15 @@ class _RegisterState extends State<Register> {
                                   isLoading = true;
                                 });
                                 Users users = new Users(
-                                    "",
-                                    ctrlName.text,
-                                    ctrlPhone.text,
-                                    ctrlEmail.text,
-                                    ctrlPassword.text,
-                                    "",
-                                    "",
-                                    "psikolog");
-                                await AuthServices.SignUp(users).then((value) {
+                                  "",
+                                  ctrlName.text,
+                                  ctrlPhone.text,
+                                  ctrlEmail.text,
+                                  ctrlPassword.text,
+                                  "",
+                                  "",
+                                );
+                                await AuthServices.signUp(users).then((value) {
                                   if (value == "success") {
                                     setState(() {
                                       isLoading = false;
