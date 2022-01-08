@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "666120283295",
+    "project_id": "unfide-f5a3c",
+    "storage_bucket": "unfide-f5a3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666120283295:android:3d2f7be653afcd84b72eaa",
+        "android_client_info": {
+          "package_name": "com.example.unfide_apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666120283295-a9eeldop1khbe095en8hit22hq4skk0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTBMbZ5R355h7YwqbvuhHpGBxPjQb0S9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666120283295-a9eeldop1khbe095en8hit22hq4skk0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
