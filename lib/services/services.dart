@@ -13,7 +13,3 @@ import 'package:unfide_apps/models/models.dart';
 
 part 'auth_services.dart';
 part 'activity_services.dart';
-part 'pendidikan_services.dart';
-part 'kesehatan_services.dart';
-part 'cintaDanLogika_services.dart';
-part 'horor_services.dart';
