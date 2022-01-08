@@ -30,6 +30,7 @@ class _JenisCeritaState extends State<JenisCerita> {
               TextButton(
                 child: Text('Pilih'),
                 onPressed: () {
+
                 },
               ),
             ]),
@@ -83,7 +84,6 @@ class _JenisCeritaState extends State<JenisCerita> {
               TextButton(
                 child: Text('Pilih'),
                 onPressed: () {
-
                 },
               ),
             ]),
