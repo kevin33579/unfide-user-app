@@ -25,7 +25,7 @@ class _TambahCeritaHororState extends State<TambahCeritaHoror> {
             leading: new IconButton(
               icon: new Icon(Icons.close, color: Colors.black),
               onPressed: () {
-                Navigator.popAndPushNamed(context, ListCeritaHoror.routeName);
+
               },
             ),
             actions: <Widget>[
@@ -53,8 +53,7 @@ class _TambahCeritaHororState extends State<TambahCeritaHoror> {
                           ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(content: Text('Processing Data')),
                           );
-                          Navigator.pushReplacementNamed(
-                              context, ListCeritaHoror.routeName);
+
                         }
 
                       },

@@ -115,7 +115,7 @@ class _ProfileSettingState extends State<ProfileSetting> {
                 setState(() {
                   isloading = true;
                 });
-                await AuthServices.signOut().then((value) {
+                await AuthServices.SignOut().then((value) {
                   if (value == true) {
                     setState(() {
                       isloading = false;

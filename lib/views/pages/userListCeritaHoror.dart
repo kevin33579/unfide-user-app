@@ -27,16 +27,7 @@ class _ListCeritaHororState extends State<ListCeritaHoror> {
               return ActivityServices.loadings();
             }
             return new ListView(
-              children: snapshot.data!.docs.map((DocumentSnapshot doc) {
-                Horor horor = new Horor(
-                  doc['HororUid'],
-                  doc['HororData'],
-                  doc['createdAt'],
-                  doc['updatedAt'],
-                  doc['likes'],
-                );
-                return HororCard(horor: horor);
-              }).toList(),
+
             );
           },
         ));
@@ -60,7 +51,7 @@ class _ListCeritaHororState extends State<ListCeritaHoror> {
               padding: EdgeInsets.only(right: 20.0),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pushReplacementNamed(context, TambahCeritaHoror.routeName);
+
                 },
                 child: Icon(
                     Icons.add,

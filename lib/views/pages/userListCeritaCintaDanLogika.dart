@@ -27,16 +27,7 @@ class _ListCeritaCintaDanLogikaState extends State<ListCeritaCintaDanLogika> {
               return ActivityServices.loadings();
             }
             return new ListView(
-              children: snapshot.data!.docs.map((DocumentSnapshot doc) {
-                CintaDanLogika cintadanlogika = new CintaDanLogika(
-                  doc['CdlUid'],
-                  doc['CdlData'],
-                  doc['createdAt'],
-                  doc['updatedAt'],
-                  doc['likes'],
-                );
-                return CintaDanLogikaCard(cintaDanLogika: cintadanlogika);
-              }).toList(),
+
             );
           },
         ));
@@ -60,7 +51,6 @@ class _ListCeritaCintaDanLogikaState extends State<ListCeritaCintaDanLogika> {
               padding: EdgeInsets.only(right: 20.0),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pushReplacementNamed(context, TambahCeritaCintaDanLogika.routeName);
                 },
                 child: Icon(
                     Icons.add,

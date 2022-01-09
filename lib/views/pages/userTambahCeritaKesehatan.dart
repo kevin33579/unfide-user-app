@@ -25,7 +25,6 @@ class _TambahCeritaKesehatanState extends State<TambahCeritaKesehatan> {
             leading: new IconButton(
               icon: new Icon(Icons.close, color: Colors.black),
               onPressed: () {
-                Navigator.popAndPushNamed(context, ListCeritaKesehatan.routeName);
               },
             ),
             actions: <Widget>[
@@ -53,8 +52,7 @@ class _TambahCeritaKesehatanState extends State<TambahCeritaKesehatan> {
                           ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(content: Text('Processing Data')),
                           );
-                          Navigator.pushReplacementNamed(
-                              context, ListCeritaKesehatan.routeName);
+
                         }
 
                       },

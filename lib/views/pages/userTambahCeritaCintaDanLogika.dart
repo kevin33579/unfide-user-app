@@ -25,7 +25,7 @@ class _TambahCeritaCintaDanLogikaState extends State<TambahCeritaCintaDanLogika>
             leading: new IconButton(
               icon: new Icon(Icons.close, color: Colors.black),
               onPressed: () {
-                Navigator.popAndPushNamed(context, ListCeritaCintaDanLogika.routeName);
+
               },
             ),
             actions: <Widget>[
@@ -53,8 +53,7 @@ class _TambahCeritaCintaDanLogikaState extends State<TambahCeritaCintaDanLogika>
                           ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(content: Text('Processing Data')),
                           );
-                          Navigator.pushReplacementNamed(
-                              context, ListCeritaCintaDanLogika.routeName);
+
                         }
 
                       },

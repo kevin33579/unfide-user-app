@@ -27,16 +27,6 @@ class _ListCeritaPendidikanState extends State<ListCeritaPendidikan> {
               return ActivityServices.loadings();
             }
             return new ListView(
-              children: snapshot.data!.docs.map((DocumentSnapshot doc) {
-                Pendidikan pendidikan = new Pendidikan(
-                  doc['pendidikanUid'],
-                  doc['PendidikanData'],
-                  doc['createdAt'],
-                  doc['updatedAt'],
-                  doc['likes'],
-                );
-                return pendidikanCard(pendidikan: pendidikan);
-              }).toList(),
             );
           },
         ));
@@ -60,7 +50,6 @@ class _ListCeritaPendidikanState extends State<ListCeritaPendidikan> {
               padding: EdgeInsets.only(right: 20.0),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pushReplacementNamed(context, TambahCeritaPendidikan.routeName);
                 },
                 child: Icon(
                     Icons.add,

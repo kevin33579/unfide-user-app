@@ -27,16 +27,7 @@ class _ListCeritaKesehatanState extends State<ListCeritaKesehatan> {
               return ActivityServices.loadings();
             }
             return new ListView(
-              children: snapshot.data!.docs.map((DocumentSnapshot doc) {
-                Kesehatan kesehatan = new Kesehatan(
-                  doc['KesehatanUid'],
-                  doc['KesehatanData'],
-                  doc['createdAt'],
-                  doc['updatedAt'],
-                  doc['likes'],
-                );
-                return KesehatanCard(kesehatan: kesehatan);
-              }).toList(),
+
             );
           },
         ));
@@ -60,7 +51,7 @@ class _ListCeritaKesehatanState extends State<ListCeritaKesehatan> {
               padding: EdgeInsets.only(right: 20.0),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.pushReplacementNamed(context, TambahCeritaKesehatan.routeName);
+
                 },
                 child: Icon(
                     Icons.add,
