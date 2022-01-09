@@ -22,4 +22,8 @@ part 'userMainmenu.dart';
 part 'userMyAccount.dart';
 part 'userContactPsikolog.dart';
 part 'userJenisCerita.dart';
+part 'userListCeritaPendidikan.dart';
+part 'userListCeritaKesehatan.dart';
+part 'userListCeritaCintaDanLogika.dart';
+part 'userListCeritaHoror.dart';
 part 'userEditProfile.dart';

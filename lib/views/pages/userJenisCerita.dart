@@ -30,7 +30,8 @@ class _JenisCeritaState extends State<JenisCerita> {
               TextButton(
                 child: Text('Pilih'),
                 onPressed: () {
-
+                  Navigator.pushReplacementNamed(
+                      context, ListCeritaPendidikan.routeName);
                 },
               ),
             ]),
@@ -48,7 +49,8 @@ class _JenisCeritaState extends State<JenisCerita> {
               TextButton(
                 child: Text('Pilih'),
                 onPressed: () {
-
+                  Navigator.pushReplacementNamed(
+                      context, ListCeritaCintaDanLogika.routeName);
                 },
               ),
             ]),
@@ -66,7 +68,8 @@ class _JenisCeritaState extends State<JenisCerita> {
               TextButton(
                 child: Text('Pilih'),
                 onPressed: () {
-
+                  Navigator.pushReplacementNamed(
+                      context, ListCeritaKesehatan.routeName);
                 },
               ),
             ]),
@@ -84,6 +87,8 @@ class _JenisCeritaState extends State<JenisCerita> {
               TextButton(
                 child: Text('Pilih'),
                 onPressed: () {
+                  Navigator.pushReplacementNamed(
+                      context, ListCeritaHoror.routeName);
                 },
               ),
             ]),
