@@ -49,6 +49,14 @@ class MyApp extends StatelessWidget {
         PusatBantuan.routeName: (context) => PusatBantuan(),
         SyaratDanKetentuan.routeName: (context) => SyaratDanKetentuan(),
         UserEditProfile.routeName: (context) => UserEditProfile(),
+        PsikologJadwal.routeName:(context) => PsikologJadwal(),
+        jadwalSenin.routeName:(context) =>jadwalSenin(),
+        jadwalSelasa.routeName:(context) =>jadwalSelasa(),
+        jadwalRabu.routeName:(context) =>jadwalRabu(),
+        jadwalKamis.routeName:(context) =>jadwalKamis(),
+        jadwalJumat.routeName:(context) =>jadwalJumat(),
+        jadwalSabtu.routeName:(context) =>jadwalSabtu(),
+        jadwalMinggu.routeName:(context) =>jadwalMinggu(),
       },
     );
   }

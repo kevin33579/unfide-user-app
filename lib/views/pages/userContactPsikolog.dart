@@ -18,7 +18,9 @@ class _contactPsikologState extends State<contactPsikolog> {
         child: Container(
           alignment: Alignment.bottomCenter,
           child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushReplacementNamed(context, PsikologJadwal.routeName);
+              },
               style: ElevatedButton.styleFrom(
                 primary: Color(0xffd09484),
                 onPrimary: Colors.white,
