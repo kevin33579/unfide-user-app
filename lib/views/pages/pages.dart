@@ -35,3 +35,7 @@ part 'jadwalKamis.dart';
 part 'jadwalJumat.dart';
 part 'jadwalSabtu.dart';
 part 'jadwalMinggu.dart';
+part 'userPanduanPenggunaan.dart';
+part 'userProfileSettings.dart';
+part 'userPusatBantuan.dart';
+part 'userSyaratDanKetentuan.dart';

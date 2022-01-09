@@ -155,7 +155,7 @@ class _RegisterState extends State<Register> {
                                   "",
                                   "",
                                 );
-                                await AuthServices.signUp(users).then((value) {
+                                await AuthServices.SignUp(users).then((value) {
                                   if (value == "success") {
                                     setState(() {
                                       isLoading = false;
